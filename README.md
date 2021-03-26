@@ -4,8 +4,8 @@
 Your job is to build a simple UX to visualize and manipulate ERC721 Tokens.
 
 This repo contains the references (code + ABI) for two ERC721 tokens deployed on the Rinkeby testnet, which you'll need to use.
-- Song for a City ( 0x004a84209a0021b8ff182ffd8bb874c53f65e90e on Rinkeby )
-- Tout Doucement (0x89150a0325ecc830a2304a44de98551051b4f466 on Rinkeby )
+- [Song for a City](contracts/SongForACity.sol) ( 0x004a84209a0021b8ff182ffd8bb874c53f65e90e on Rinkeby ) (get the [ABI](build/contracts/SongForACity.json))
+- [Tout Doucement](contracts/ToutDoucement.sol) (0x89150a0325ecc830a2304a44de98551051b4f466 on Rinkeby ) (get the [ABI](build/contracts/ToutDoucement.json))
 
 To get started using these tokens, I suggest you use the truffle generated ABI and MyCrypto in order to claim/buy a token for each.
 
