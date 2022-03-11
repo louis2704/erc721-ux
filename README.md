@@ -21,10 +21,9 @@ To get started using these tokens, I suggest you use the truffle generated ABI a
 ### Calling read and write functions
 - Create a page /songForACity
 - Display the name and the total token number (2 pts)
+- Create a button to claim a new token for the current user(3 pts)
 - Create a page /songForACity/{token number}
 - Display the information (image, name and description) referenced in the Metadata URI for token {token number} (2 pts)
-- Create a page /songForACity/claim
-- Create a button to claim a new token for the current user(3 pts)
 
 ### Paying through functions
 - Create a page /toutDoucement
