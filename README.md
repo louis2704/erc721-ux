@@ -21,6 +21,7 @@ For the next 3 questions, use token 'Song for a city'
 - Create a button to claim a new token for the current user(2 pts)
 - Create a view for token "Tout Doucement", display the minimum token price, and create a button to buy a token (this one needs to be paid for) (2 pts)
 - Create a view to display all the tokens the current user has on both ERC721 (2 pts)
+#### Call teacher once you get here
 - Create an interface to transfer a token (2 pts)
 - Create a view to visualize all the token holders for each ERC721 (2 pts)
 - Create routing + views to display all the tokens held by any address specified in the URL (2 pts)
