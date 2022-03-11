@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol";
 
 contract ToutDoucement is IERC721Metadata, ERC721 {
 	uint256 public tokenCounter;
+  uint256 public tokenPrice = 100000000000000000;
   constructor() ERC721("Victoire Oberkampf - Tout Doucement", "TOUDOU") public {
   	_mint(msg.sender, tokenCounter);
     tokenCounter++;
@@ -20,7 +21,7 @@ contract ToutDoucement is IERC721Metadata, ERC721 {
 
    function buyAToken() public payable
    {
-   	require(msg.value > 100000000000000000);
+   	require(msg.value > tokenPrice);
    	_mint(msg.sender, tokenCounter);
    	tokenCounter++;
 
