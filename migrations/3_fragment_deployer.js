@@ -1,23 +1,23 @@
-const Fragment = artifacts.require(
-  "./Fragment.sol"
+const FakeMeebits = artifacts.require(
+  "./FakeMeebits.sol"
 );
-const fragmentClaimer = artifacts.require(
-  "./fragmentClaimer.sol"
+const FakeMeebitsClaimer = artifacts.require(
+  "./FakeMeebitsClaimer.sol"
 );
 
 async function doDeploy(deployer, network, accounts) {
 
-  const ERC721Contract = await deployer.deploy(
-    Fragment
+  const FakeMeebitsContract = await deployer.deploy(
+    FakeMeebits
   );
 
-  const fragmentClaimerContract = await deployer.deploy(
-    fragmentClaimer,
+  const FakeMeebitsClaimerContract = await deployer.deploy(
+    FakeMeebitsClaimer,
     431,
-    ERC721Contract.address
+    FakeMeebitsContract.address
   );
-  // Declare fragmentClaimer as minter for ERC721
-  await ERC721Contract.manageMinter(fragmentClaimerContract.address, true);
+  // Declare FakeMeebitsClaimer as minter for ERC721
+  await FakeMeebitsContract.manageMinter(FakeMeebitsClaimerContract.address, true);
 
 }
 

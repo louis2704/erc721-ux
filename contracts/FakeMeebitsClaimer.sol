@@ -1,8 +1,8 @@
 pragma solidity ^0.6.2;
 
-import "./Fragment.sol";
+import "./FakeMeebits.sol";
 
-contract fragmentClaimer {
+contract FakeMeebitsClaimer {
     event UpdateWhitelist(address _account, bool _value);
     event aTokenWasClaimed(uint _tokenNumber, address _tokenClaimer);
     event yeeeeeeaaaaaahThxCoeurCoeurCoeur(address _tipper);
@@ -43,7 +43,7 @@ contract fragmentClaimer {
         // Making sure that the signer has been whitelisted
         require(signerIsWhitelisted(_hash, _signature), "Claim: signer not whitelisted");
         // All should be good, so we mint a token yeah
-        Fragment targetERC721Contract = Fragment(ERC721address);
+        FakeMeebits targetERC721Contract = FakeMeebits(ERC721address);
         targetERC721Contract.mintAToken(_tokenToClaim);
 
         // Registering that the token was claimed

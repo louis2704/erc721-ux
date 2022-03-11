@@ -6,7 +6,7 @@ var mnemonic3 = ""
 
 
 ///// A remplir
-const ERC721ContractAddres = "0x623F747Ca2eEbb700DA0260B50B0d2e0c9AfBEaD"
+const ERC721ContractAddres = "0xB8E575a750720B536eAbF729Cee5c1F0393AbBa0"
 
 
 
@@ -21,7 +21,7 @@ async function signAllTokens() {
   // ERC721 contract address
   
   let signaturesDictionnary = []
-  for (i = 0; i < 500; i++)
+  for (i = 0; i < 20000; i++)
     {
     // Loading token number and associated URIs
   	var parametersEncoded = web3.eth.abi.encodeParameters(['address', 'uint256'], [ERC721ContractAddres, i]);
