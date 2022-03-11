@@ -10,18 +10,25 @@ This repo contains the references (code + ABI) for two ERC721 tokens deployed on
 To get started using these tokens, I suggest you use the truffle generated ABI and MyCrypto in order to claim/buy a token for each.
 
 ## Tasks list
+### Creating a js app and connecting to Ethereum
 - Create a repo to host your work
-- Create a React / Vue JS app (2 pts)
-- Connect your app to the Rinkeby network through Metamask and display the ChainId, the last block number, and user address (2 pts)
+- Create a React / Vue JS app and create a page /chain-info(2 pts)
+- Connect your app to the Rinkeby network through Metamask and display the ChainId, the last block number, and user address with view /chain-info (2 pts)
 
-For the next 3 questions, use token 'Song for a city'
-
+### Calling read and write functions
+- Create a page /songForACity
 - Display the name and the total token number (2 pts)
-- Display the information (image, name and description) referenced in the Metadata URI for token 0 (2 pts)
-- Create a button to claim a new token for the current user(2 pts)
-- Create a view for token "Tout Doucement", display the minimum token price, and create a button to buy a token (this one needs to be paid for) (2 pts)
-- Create a view to display all the tokens the current user has on both ERC721 (2 pts)
-#### Call teacher once you get here
-- Create an interface to transfer a token (2 pts)
-- Create a view to visualize all the token holders for each ERC721 (2 pts)
-- Create routing + views to display all the tokens held by any address specified in the URL (2 pts)
+- Create a page /songForACity/{token number}
+- Display the information (image, name and description) referenced in the Metadata URI for token {token number} (2 pts)
+- Create a page /songForACity/claim
+- Create a button to claim a new token for the current user(3 pts)
+
+### Paying through functions
+- Create a page /toutDoucement
+- Display the minimum token price, and create a button to buy a token (this one needs to be paid for) (2 pts)
+- Create a page /toutDoucement/{user address}
+- Display all the tokens {user address} has on tout doucement (3 pts)
+
+### Calling a minter with a signature
+- Create a page /fragment
+- Create a button to mint a token. Read the contract; use [signature data](claimerV1-tools) to call function `claimAToken()` on [fragment claimer](contracts/fragmentClaimer.sol) correctly (4 pts)
