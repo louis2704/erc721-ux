@@ -13,7 +13,7 @@ async function doDeploy(deployer, network, accounts) {
 
   const FakeMeebitsClaimerContract = await deployer.deploy(
     FakeMeebitsClaimer,
-    431,
+    20000,
     FakeMeebitsContract.address
   );
   // Declare FakeMeebitsClaimer as minter for ERC721

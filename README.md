@@ -6,8 +6,8 @@ Your job is to build a simple UX to visualize and manipulate ERC721 Tokens.
 This repo contains the references (code + ABI) for two ERC721 tokens deployed on the Rinkeby testnet, which you'll need to use.
 - [Fake BAYC](contracts/FakeBAYC.sol) ( 0x6b740C7a965d75A4801642Fabc650DA92CeA47ef on Rinkeby ) (get the [ABI](build/contracts/FakeBAYC.json))
 - [Fake Nefturians](contracts/FakeNefturians.sol) (0x14e68d0ba29c07478bd68f4a479a0211bd48ca4e on Rinkeby ) (get the [ABI](build/contracts/FakeNefturians.json))
-- [Fake Meebits](contracts/FakeMeebits.sol) (0xB8E575a750720B536eAbF729Cee5c1F0393AbBa0 on Rinkeby ) (get the [ABI](build/contracts/FakeMeebits.json))
-- [Fake Meebits Claimer](contracts/FakeMeebitsClaimer.sol) (0xaefd0faf4c3bf22ca99ff5bb87d4d9e34579b92c on Rinkeby ) (get the [ABI](build/contracts/FakeMeebitsClaimer.json))
+- [Fake Meebits](contracts/FakeMeebits.sol) (0x66e0f56e86906fd7ee186d29a1a25dc12019c7f3 on Rinkeby ) (get the [ABI](build/contracts/FakeMeebits.json))
+- [Fake Meebits Claimer](contracts/FakeMeebitsClaimer.sol) (0x656ec82544a3464f07bb86bea3447a4fdf489c1b on Rinkeby ) (get the [ABI](build/contracts/FakeMeebitsClaimer.json))
 
 
 To get started using these tokens, I suggest you use the truffle generated ABI and MyCrypto in order to claim/buy a token for each.
@@ -35,5 +35,8 @@ To get started using these tokens, I suggest you use the truffle generated ABI a
 
 ### Calling a minter with a signature
 - Create a page /fakeMeebits
-- Create a button to mint a token. Read the contract; use [signature data](claimerV1-tools) to call function `claimAToken()` on [fake meebits claimer](contracts/FakeMeebits.sol) correctly (4 pts)
+- Create a button to mint a token. 
+- Read the contract
+- Let the user pick a token number that wasn't minted yet
+- use [signature data](claimerV1-tools) to call function `claimAToken()` on [fake meebits claimer](contracts/FakeMeebits.sol) correctly (4 pts)
 

@@ -8,7 +8,7 @@ contract FakeMeebits is IERC721Metadata, ERC721 {
   mapping(address => bool) public whitelist;
   
   constructor() ERC721("Fake Meebits", "FMB") public {
-  	_mint(msg.sender, 0);
+  	_mint(msg.sender, 1);
     whitelist[msg.sender] = true;
     _setBaseURI("https://meebits.larvalabs.com/meebit/");
     }
