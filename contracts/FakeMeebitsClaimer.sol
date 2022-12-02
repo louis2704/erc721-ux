@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.6.2;
 
 import "./FakeMeebits.sol";
@@ -66,8 +67,8 @@ contract FakeMeebitsClaimer {
 
 
     // 20/02/27: Borrowed from https://github.com/austintgriffith/bouncer-proxy/blob/master/BouncerProxy/BouncerProxy.sol
-    //borrowed from OpenZeppelin's ESDA stuff:
-    //https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/cryptography/ECDSA.sol
+    // borrowed from OpenZeppelin's ESDA stuff:
+    // https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/contracts/cryptography/ECDSA.sol
     function signerIsWhitelisted(bytes32 _hash, bytes memory _signature) internal view returns (bool) {
         bytes32 r;
         bytes32 s;

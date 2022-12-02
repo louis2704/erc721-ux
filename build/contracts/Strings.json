@@ -2345,8 +2345,8 @@
     "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.4",
-  "updatedAt": "2022-03-11T09:03:22.411Z",
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2022-11-25T08:09:42.090Z",
   "devdoc": {
     "details": "String operations.",
     "methods": {}
