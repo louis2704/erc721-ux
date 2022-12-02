@@ -19,7 +19,7 @@ To get started using these tokens, I suggest you use the truffle generated ABI a
 
 - Create a repo to host your work
 - Create a React / Vue JS app and create a page /chain-info(2 pts)
-- Connect your app to the Sepolia network through Metamask and display the ChainId, the last block number, and user address with view /chain-info (2 pts)
+- Connect your app to the Sepolia network through Metamask and display the ChainId, the last block number, and user address on /chain-info (2 pts)
 - Show an error page and redirect user to it if the chain is not Sepolia (1 pt)
 
 ### Calling read and write functions
