@@ -28,7 +28,7 @@ To get started using these tokens, I suggest you use the truffle generated ABI a
 - Display the name and the total token number (2 pts)
 - Create a button to claim a new token for the current user(2 pts)
 - Create a page /fakeBayc/{tokenId}
-- Display the information (image, name and description) referenced in the Metadata URI for token {tokenId} (2 pts)
+- Display the informations (image and all the attributes) referenced in the Metadata URI for token {tokenId} (2 pts)
 - Show a clean error message on /fakeBayc/{tokenId} if the token does not exist (1pt)
 
 ### Paying through functions
